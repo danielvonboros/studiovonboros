@@ -1,0 +1,13 @@
+node_modules
+dist
+.DS_Store
+*.local
+*.tsbuildinfo
+
+# Netlify
+.netlify
+
+# Env — ALLE Varianten, nicht nur .env.local
+.env
+.env.*
+!.env.example

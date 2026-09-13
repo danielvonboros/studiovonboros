@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   Tailwind v4: die Konfiguration lebt hier im CSS, nicht in tailwind.config.js.
+   Jeder Eintrag in @theme erzeugt automatisch Utilities:
+   --color-kalk  ->  bg-kalk, text-kalk, border-kalk
+   --font-display -> font-display
+--------------------------------------------------------------------------- */
+@theme {
+  /* CI "Kalk und Espresso" */
+  --color-kalk: #efe8dc;
+  --color-kalk-line: #ded5c8;
+  --color-espresso: #2a2420;
+  --color-espresso-soft: #4a413a;
+
+  /* Akzente — sparsam einsetzen, hoechstens einer pro Bildschirm */
+  --color-messing: #b08d57;
+  --color-ton: #9e5e3c;
+  --color-olive: #6f6b52;
+  --color-oxblood: #5f3138;
+
+  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-sans: "Archivo Variable", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-kalk);
+    color: var(--color-espresso);
+    font-family: var(--font-sans);
+    letter-spacing: -0.011em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Sichtbarer Fokus fuer Tastaturbedienung */
+  :focus-visible {
+    outline: 2px solid var(--color-messing);
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* Kleine Versalzeile ueber Ueberschriften ("Kicker") */
+  .kicker {
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--color-espresso-soft);
+  }
+
+  /* Textlink mit Unterstrich, der beim Hover durchlaeuft */
+  .link-underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .link-underline:hover::after {
+    transform: scaleX(0.35);
+  }
+}
+
+/* Grundzustand fuer die Scroll-Reveal-Animation (siehe useScrollReveal) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Wer im Betriebssystem weniger Bewegung eingestellt hat, bekommt keine */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

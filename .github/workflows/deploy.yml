@@ -1,0 +1,33 @@
+# OPTIONAL — nur benutzen, wenn du NICHT die Netlify-Git-Integration nutzt.
+# Beides gleichzeitig baut jeden Commit doppelt.
+# Voraussetzung: Repository Secrets NETLIFY_AUTH_TOKEN und NETLIFY_SITE_ID.
+name: Deploy to Netlify
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Deploy
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: npx netlify-cli@17 deploy --dir=dist --prod --message "${{ github.sha }}"
