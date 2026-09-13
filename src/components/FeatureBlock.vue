@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { Project } from '@/types';
 
-// Ein typisiertes Prop-Objekt. `flip` dreht Bild/Text-Reihenfolge um.
 defineProps<{ project: Project; flip?: boolean; index?: number }>();
 </script>
 
@@ -10,7 +9,6 @@ defineProps<{ project: Project; flip?: boolean; index?: number }>();
     :id="project.id"
     class="grid items-center gap-10 border-t border-kalk-line py-20 md:grid-cols-2 md:gap-20 md:py-28"
   >
-    <!-- :class mit Ternary: auf md wandert das Bild in die 2. Spalte -->
     <div :class="flip ? 'md:order-2' : ''">
       <div class="overflow-hidden bg-kalk-line">
         <img
@@ -34,7 +32,11 @@ defineProps<{ project: Project; flip?: boolean; index?: number }>();
         {{ project.title }}
       </h2>
       <p class="mb-8 max-w-prose leading-relaxed text-espresso-soft">{{ project.description }}</p>
-      <a v-if="project.href" :href="project.href" class="link-underline">Mehr ansehen</a>
-    </div>
+<router-link
+        :to="`/projekte/${project.id}`"
+        class="inline-block border-b-2 border-black pb-1 text-sm uppercase tracking-wide hover:opacity-60"
+      >
+        Mehr ansehen
+      </router-link>    </div>
   </article>
 </template>

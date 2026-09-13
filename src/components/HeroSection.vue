@@ -1,6 +1,5 @@
 <script setup lang="ts">
-// Props definierst du mit defineProps<{…}>() — typisiert ueber ein Generic.
-// withDefaults liefert Standardwerte (wie Default-Props in React).
+
 withDefaults(
   defineProps<{
     image?: string;
@@ -20,14 +19,12 @@ withDefaults(
 
 <template>
   <section class="relative flex h-svh min-h-[560px] items-end overflow-hidden bg-espresso">
-    <!-- :src ist v-bind — wie src={image} in React -->
     <img
       :src="image"
       alt=""
       fetchpriority="high"
       class="absolute inset-0 h-full w-full object-cover"
     />
-    <!-- Verlauf statt flaechigem Schleier: Bild bleibt oben unverfaelscht -->
     <div class="absolute inset-0 bg-gradient-to-t from-espresso/85 via-espresso/25 to-transparent" />
 
     <div class="relative z-10 w-full px-6 pb-16 text-kalk md:px-10 md:pb-24">

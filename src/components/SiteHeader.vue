@@ -1,78 +1,51 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref } from 'vue';
 
-// `ref` ist Vues reaktiver State — wie Reacts useState.
-// Im <script> liest/schreibst du den Wert ueber `.value`,
-// im <template> direkt (Vue packt ihn dort automatisch aus).
 const open = ref(false);
-const scrolled = ref(false);
 
 const links = [
-  { label: 'Projekte', href: '#projekte' },
-  { label: 'Studio', href: '#studio' },
-  { label: 'Kontakt', href: '#kontakt' },
+  { label: 'Projekte', hash: '#projekte' },
+  { label: 'Studio', hash: '#studio' },
+  { label: 'Kontakt', hash: '#kontakt' },
 ];
-
-// Ab 80px Scroll bekommt der Header einen Hintergrund, damit die
-// Navigation auf hellen Projektbildern lesbar bleibt.
-const onScroll = () => (scrolled.value = window.scrollY > 80);
-
-onMounted(() => {
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
-});
-onUnmounted(() => window.removeEventListener('scroll', onScroll));
 </script>
 
 <template>
   <header
-    class="fixed inset-x-0 top-0 z-50 transition-colors duration-500"
-    :class="scrolled ? 'bg-kalk/92 text-espresso backdrop-blur-sm' : 'text-kalk'"
+    class="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-5 text-white mix-blend-difference"
   >
-    <div class="flex items-center justify-between px-6 py-5 md:px-10">
-      <a href="#" class="leading-none">
-        <span class="block font-display text-xl tracking-tight md:text-2xl">von Boros</span>
-        <span class="block text-[0.6rem] uppercase tracking-[0.32em] opacity-70">Studio</span>
-      </a>
+    <router-link to="/" class="text-lg font-extrabold uppercase tracking-tight">
+      Studio von Boros
+    </router-link>
 
-      <!-- v-for ist Vues .map(); :key entspricht Reacts key -->
-      <nav class="hidden gap-10 md:flex">
-        <a
-          v-for="link in links"
-          :key="link.href"
-          :href="link.href"
-          class="text-xs uppercase tracking-[0.18em] transition-opacity hover:opacity-60"
-        >
-          {{ link.label }}
-        </a>
-      </nav>
-
-      <!-- @click ist onClick; open = !open schaltet den State um -->
-      <button
-        class="text-xs uppercase tracking-[0.18em] md:hidden"
-        :aria-expanded="open"
-        aria-controls="mobile-menu"
-        @click="open = !open"
+    <nav class="hidden gap-8 md:flex">
+      <router-link
+        v-for="link in links"
+        :key="link.hash"
+        :to="{ path: '/', hash: link.hash }"
+        class="text-sm uppercase tracking-wide hover:opacity-60"
       >
-        {{ open ? 'Schließen' : 'Menü' }}
-      </button>
-    </div>
+        {{ link.label }}
+      </router-link>
+    </nav>
+
+    <button class="md:hidden" :aria-expanded="open" aria-label="Menü" @click="open = !open">
+      <span class="text-sm uppercase tracking-wide">{{ open ? 'Schließen' : 'Menü' }}</span>
+    </button>
   </header>
 
-  <!-- v-if ist wie {open && (...)} in React -->
   <div
     v-if="open"
-    id="mobile-menu"
-    class="fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-espresso text-kalk md:hidden"
+    class="fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-black text-white md:hidden"
   >
-    <a
+    <router-link
       v-for="link in links"
-      :key="link.href"
-      :href="link.href"
-      class="font-display text-3xl"
+      :key="link.hash"
+      :to="{ path: '/', hash: link.hash }"
+      class="text-2xl uppercase"
       @click="open = false"
     >
       {{ link.label }}
-    </a>
+    </router-link>
   </div>
 </template>
