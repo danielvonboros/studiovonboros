@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
 <template>
   <footer id="kontakt" class="bg-espresso px-6 py-24 text-kalk md:px-10 md:py-32">
     <p class="max-w-3xl font-display text-[clamp(2.25rem,6vw,5rem)] leading-[1.02]">
-      Erzähl mir von deinem Raum.
+      {{$t('footer.cta')}}
     </p>
 
     <a href="mailto:hallo@studiovonboros.com" class="link-underline mt-10 text-messing">
@@ -14,12 +14,12 @@ const year = new Date().getFullYear();
 
     <div class="mt-20 grid gap-10 border-t border-espresso-soft pt-10 md:grid-cols-3">
       <div>
-        <p class="kicker mb-3 !text-kalk/50">Studio</p>
-        <p class="text-kalk/80">Berlin, Deutschland</p>
-        <p class="text-kalk/80">Termine nach Vereinbarung</p>
+        <p class="kicker mb-3 !text-kalk/50">{{$t('footer.studioLabel')}}</p>
+        <p class="text-kalk/80">{{$t('footer.studioLocation')}}</p>
+        <p class="text-kalk/80">{{$t('footer.studioHours')}}</p>
       </div>
       <div>
-        <p class="kicker mb-3 !text-kalk/50">Social</p>
+        <p class="kicker mb-3 !text-kalk/50">{{$t('footer.socialLabel')}}</p>
         <a
           href="https://instagram.com/studiovonboros"
           rel="me noopener"
@@ -28,10 +28,10 @@ const year = new Date().getFullYear();
         >
       </div>
       <div class="md:text-right">
-        <p class="kicker mb-3 !text-kalk/50">Rechtliches</p>
-        <a href="/impressum" class="block text-kalk/80 hover:text-messing">Impressum</a>
-        <a href="/datenschutz" class="block text-kalk/80 hover:text-messing">Datenschutz</a>
-        <p class="mt-4 text-xs text-kalk/40">© {{ year }} Studio von Boros</p>
+        <p class="kicker mb-3 !text-kalk/50">{{$t('footer.legalLabel')}}</p>
+        <a href="/impressum" class="block text-kalk/80 hover:text-messing">{{$t('footer.imprint')}}</a>
+        <a href="/datenschutz" class="block text-kalk/80 hover:text-messing">{{$t('footer.privacy')}}</a>
+        <p class="mt-4 text-xs text-kalk/40">© {{ year }} {{$t('footer.copyright')}}</p>
       </div>
     </div>
   </footer>

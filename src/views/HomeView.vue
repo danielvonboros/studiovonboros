@@ -21,14 +21,12 @@ useScrollReveal();
   </section>
 
   <section id="studio" class="mx-auto max-w-3xl px-6 py-24 text-center md:px-10">
-    <p class="mb-4 text-xs uppercase tracking-[0.2em] text-neutral-500">Studio</p>
-    <h2 class="mb-6 text-[clamp(1.8rem,4vw,3rem)] font-extrabold uppercase">
-      Über Studio von Boros
+    <p class="kicker mb-4">{{ $t('studio.kicker') }}</p>
+    <h2 class="mt-3 font-display text-[clamp(2rem,6vw,4rem)] leading-[0.95]">
+      {{ $t('studio.title') }}
     </h2>
-    <p class="text-lg leading-relaxed text-neutral-700">
-      Studio von Boros gestaltet Innenräume und Möbel nach Maß. Der Fokus liegt auf dem ungenutzten
-      Potenzial kleiner Stadtwohnungen — durchdachte Einbauten, ehrliche Materialien und Räume, die
-      den Alltag leichter machen.
+    <p class="mt-6 text-lg leading-relaxed text-espresso-soft">
+      {{ $t('studio.text') }}
     </p>
   </section>
 </template>

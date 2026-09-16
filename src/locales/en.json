@@ -1,0 +1,35 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "studio": "Studio",
+    "contact": "Contact",
+    "menuOpen": "Menu",
+    "menuClose": "Close"
+  },
+  "hero": {
+    "kicker": "Interior Architecture · Furniture Design · Berlin",
+    "intro": "Spaces with attitude. We design interiors and furniture that unite function and calm.",
+    "cta": "View projects"
+  },
+  "projects": {
+    "more": "View project",
+    "back": "All projects",
+    "notFound": "Project not found."
+  },
+  "studio": {
+    "kicker": "Studio",
+    "title": "One studio, one point of contact, one standard.",
+    "text": "Studio von Boros is my practice for interior architecture and bespoke furniture in Berlin. I plan, draw and oversee the build myself — from the first measurement to the mounted front. The focus is the untapped potential of urban apartments: considered built-ins, honest materials, and spaces that make everyday life easier."
+  },
+"footer": {
+    "cta": "Tell me about your space.",
+    "studioLabel": "Studio",
+    "studioLocation": "Berlin, Germany",
+    "studioHours": "By appointment",
+    "socialLabel": "Social",
+    "legalLabel": "Legal",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "copyright": "© {year} Studio von Boros"
+  }
+}

@@ -36,7 +36,7 @@ defineProps<{ project: Project; flip?: boolean; index?: number }>();
         :to="`/projekte/${project.id}`"
         class="inline-block border-b-2 border-black pb-1 text-sm uppercase tracking-wide hover:opacity-60"
       >
-        Mehr ansehen
+        {{ $t('projects.more') }}
       </router-link>    </div>
   </article>
 </template>

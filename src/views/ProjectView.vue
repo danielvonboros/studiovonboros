@@ -10,10 +10,10 @@ const project = computed(() => projects.find((p) => p.id === props.id));
 <template>
   <section class="mx-auto max-w-5xl px-6 py-28 md:px-10">
     <router-link
-      :to="{ path: '/', hash: '#projekte' }"
+      :to="{ path: '/', hash: '#projects' }"
       class="text-sm uppercase tracking-wide text-neutral-500 hover:opacity-60"
     >
-      ← Alle Projekte
+      {{ $t('projects.back') }}
     </router-link>
 
     <template v-if="project">
@@ -34,7 +34,7 @@ const project = computed(() => projects.find((p) => p.id === props.id));
     </template>
 
     <template v-else>
-      <p class="mt-16 text-lg text-neutral-600">Projekt nicht gefunden.</p>
+      <p class="mt-16 text-lg text-neutral-600">{{$t('projects.notFound')}}</p>
     </template>
   </section>
 </template>

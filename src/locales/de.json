@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "projects": "Projekte",
+    "studio": "Studio",
+    "contact": "Kontakt",
+    "menuOpen": "Menü",
+    "menuClose": "Schließen"
+  },
+  "hero": {
+    "kicker": "Innenarchitektur · Möbeldesign · Berlin",
+    "title": "Räume mit Haltung.",
+    "intro": "Räume mit Haltung. Ich entwerfe Innenräume und Möbel, die Funktion und Ruhe verbinden.",
+    "cta": "Projekte ansehen"
+  },
+  "projects": {
+    "more": "Mehr ansehen",
+    "back": "Alle Projekte",
+    "notFound": "Projekt nicht gefunden."
+  },
+  "studio": {
+    "kicker": "Studio",
+    "title": "Ein Büro, ein Ansprechpartner, ein Maßstab.",
+    "text": "Studio von Boros ist mein Büro für Innenarchitektur und Möbel nach Maß in Berlin. Ich plane, zeichne und begleite die Ausführung selbst — vom ersten Aufmaß bis zur montierten Front. Der Fokus liegt auf dem ungenutzten Potenzial städtischer Wohnungen: durchdachte Einbauten, ehrliche Materialien und Räume, die den Alltag leichter machen."
+  },
+  "footer": {
+    "cta": "Erzähl mir von deinem Raum.",
+    "studioLabel": "Studio",
+    "studioLocation": "Berlin, Deutschland",
+    "studioHours": "Termine nach Vereinbarung",
+    "socialLabel": "Social",
+    "legalLabel": "Rechtliches",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "copyright": "© {year} Studio von Boros"
+  }
+}

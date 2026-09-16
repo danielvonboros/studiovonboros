@@ -4,9 +4,9 @@ import { ref } from 'vue';
 const open = ref(false);
 
 const links = [
-  { label: 'Projekte', hash: '#projekte' },
-  { label: 'Studio', hash: '#studio' },
-  { label: 'Kontakt', hash: '#kontakt' },
+  { label: 'nav.projects', hash: '#projekte' },
+  { label: 'nav.studio', hash: '#studio' },
+  { label: 'nav.contact', hash: '#kontakt' },
 ];
 </script>
 
@@ -30,7 +30,7 @@ const links = [
     </nav>
 
     <button class="md:hidden" :aria-expanded="open" aria-label="Menü" @click="open = !open">
-      <span class="text-sm uppercase tracking-wide">{{ open ? 'Schließen' : 'Menü' }}</span>
+      <span class="text-sm uppercase tracking-wide">{{ open ? $t('nav.menuClose') : $t('nav.menuOpen') }}</span>
     </button>
   </header>
 
