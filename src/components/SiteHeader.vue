@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import LocaleSwitch from '@/components/LocaleSwitch.vue';
 
 const open = ref(false);
 
 const links = [
-  { label: 'nav.projects', hash: '#projekte' },
+  { label: `nav.projects`, hash: '#projects' },
   { label: 'nav.studio', hash: '#studio' },
-  { label: 'nav.contact', hash: '#kontakt' },
+  { label: 'nav.contact', hash: '#contact' },
 ];
 </script>
 
@@ -25,10 +26,11 @@ const links = [
         :to="{ path: '/', hash: link.hash }"
         class="text-sm uppercase tracking-wide hover:opacity-60"
       >
-        {{ link.label }}
+        {{ $t(link.label) }}
       </router-link>
+      <LocaleSwitch />
     </nav>
-
+    
     <button class="md:hidden" :aria-expanded="open" aria-label="Menü" @click="open = !open">
       <span class="text-sm uppercase tracking-wide">{{ open ? $t('nav.menuClose') : $t('nav.menuOpen') }}</span>
     </button>
@@ -45,7 +47,8 @@ const links = [
       class="text-2xl uppercase"
       @click="open = false"
     >
-      {{ link.label }}
+      {{ $t(link.label) }}
     </router-link>
+    <LocaleSwitch class="mt-4" />
   </div>
 </template>

@@ -8,4 +8,6 @@ import '@fontsource/instrument-serif/400.css';
 import '@fontsource/instrument-serif/400-italic.css';
 import '@fontsource-variable/archivo';
 
+document.documentElement.lang = i18n.global.locale.value;
+
 createApp(App).use(router).use(i18n).mount('#app');

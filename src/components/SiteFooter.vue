@@ -3,7 +3,7 @@ const year = new Date().getFullYear();
 </script>
 
 <template>
-  <footer id="kontakt" class="bg-espresso px-6 py-24 text-kalk md:px-10 md:py-32">
+  <footer id="contact" class="bg-espresso px-6 py-24 text-kalk md:px-10 md:py-32">
     <p class="max-w-3xl font-display text-[clamp(2.25rem,6vw,5rem)] leading-[1.02]">
       {{$t('footer.cta')}}
     </p>

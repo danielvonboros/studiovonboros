@@ -10,7 +10,7 @@ useScrollReveal();
 <template>
   <HeroSection />
 
-  <section id="projekte" class="mx-auto max-w-6xl px-6 md:px-10">
+  <section id="projects" class="mx-auto max-w-6xl px-6 md:px-10">
     <FeatureBlock
       v-for="(project, i) in projects"
       :key="project.id"
