@@ -30,5 +30,8 @@ useScrollReveal();
       {{ $t('studio.text') }}
     </p>
   </section>
+
       <PricingSection />
+
+      <router-view />
 </template>

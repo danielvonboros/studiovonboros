@@ -1,15 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
-import ProjectView from '@/views/ProjectView.vue';
+import ProjectModal from '@/components/ProjectModal.vue';
 
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', name: 'home', component: HomeView },
-    { path: '/projekte/:id', name: 'project', component: ProjectView, props: true },
+    {path: '/',
+      component: HomeView,
+      children: [
+        { path: 'projekte/:id', name: 'project', component: ProjectModal, props: true },
+      ],},
     { path: '/:pathMatch(.*)*', redirect: '/' },
   ],
-  scrollBehavior(to) {
+    scrollBehavior(to, from, savedPosition) {
+    if (to.name === 'project' || from.name === 'project') return false;
+    if (savedPosition) return savedPosition;
     if (to.hash) return { el: to.hash, behavior: 'smooth' };
     return { top: 0 };
   },
