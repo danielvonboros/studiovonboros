@@ -68,5 +68,12 @@
     "imprint": "Imprint",
     "privacy": "Privacy",
     "copyright": "© {year} Studio von Boros"
+  },
+    "seo": {
+    "defaultTitle": "Studio von Boros — Interior Architecture & Furniture Design in Berlin",
+    "titleTemplate": "%s — Studio von Boros",
+    "description": "Studio von Boros designs bespoke interiors and furniture for small urban apartments in Berlin — considered built-ins, honest materials.",
+    "home": "Interior Architecture & Bespoke Furniture in Berlin",
+    "project": "Project"
   }
 }

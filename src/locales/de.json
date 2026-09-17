@@ -69,5 +69,12 @@
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "copyright": "© {year} Studio von Boros"
+  },
+    "seo": {
+    "defaultTitle": "Studio von Boros — Innenarchitektur & Möbeldesign in Berlin",
+    "titleTemplate": "%s — Studio von Boros",
+    "description": "Studio von Boros gestaltet Innenräume und Möbel nach Maß für kleine Stadtwohnungen in Berlin — durchdachte Einbauten, ehrliche Materialien.",
+    "home": "Innenarchitektur & Möbel nach Maß in Berlin",
+    "project": "Projekt"
   }
 }

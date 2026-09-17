@@ -2,11 +2,19 @@
 import { computed, onMounted, onBeforeUnmount } from 'vue';
 import { useRouter } from 'vue-router';
 import { projects } from '@/data/projects';
+import {useSeo} from '@/composables/useSeo';
+import { useI18n } from 'vue-i18n';
 
 const props = defineProps<{ id: string }>();
 const router = useRouter();
+const { t } = useI18n();
 
 const project = computed(() => projects.find((p) => p.id === props.id));
+
+useSeo(
+  () => project.value?.title ?? t('seo.project'),
+  () => project.value?.description,
+);
 
 function close() {
   router.push({ path: '/' });

@@ -4,8 +4,10 @@ import FeatureBlock from '@/components/FeatureBlock.vue';
 import PricingSection from '@/components/PricingSection.vue';
 import { projects } from '@/data/projects';
 import { useScrollReveal } from '@/composables/useScrollReveal';
+import { useSeo } from '@/composables/useSeo';
 
 useScrollReveal();
+useSeo();
 </script>
 
 <template>
