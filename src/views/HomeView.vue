@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HeroSection from '@/components/HeroSection.vue';
 import FeatureBlock from '@/components/FeatureBlock.vue';
+import PricingSection from '@/components/PricingSection.vue';
 import { projects } from '@/data/projects';
 import { useScrollReveal } from '@/composables/useScrollReveal';
 
@@ -29,4 +30,5 @@ useScrollReveal();
       {{ $t('studio.text') }}
     </p>
   </section>
+      <PricingSection />
 </template>

@@ -22,6 +22,32 @@
     "title": "Ein Büro, ein Ansprechpartner, ein Maßstab.",
     "text": "Studio von Boros ist mein Büro für Innenarchitektur und Möbel nach Maß in Berlin. Ich plane, zeichne und begleite die Ausführung selbst — vom ersten Aufmaß bis zur montierten Front. Der Fokus liegt auf dem ungenutzten Potenzial städtischer Wohnungen: durchdachte Einbauten, ehrliche Materialien und Räume, die den Alltag leichter machen."
   },
+   "pricing": {
+    "kicker": "Leistungen",
+    "title": "Klare Pakete, ehrliche Preise.",
+    "intro": "Ein Festpreis für den durchdachten Umbau eines Raums — alles Weitere planen wir individuell.",
+    "package": {
+      "name": "Raumkonzept",
+      "price": "ab 2.400 €",
+      "period": "pro Raum, Festpreis",
+      "features": [
+        "Erstgespräch & Aufmaß vor Ort in Berlin",
+        "Raumkonzept mit Grundriss & Möblierung",
+        "Entwurf der Einbauten & Möbel nach Maß",
+        "Material- und Farbkonzept",
+        "Detailpläne für die Umsetzung"
+      ],
+      "cta": "Paket anfragen"
+    },
+    "custom": {
+      "name": "Individuelle Projekte",
+      "price": "Auf Anfrage",
+      "period": "Umfang nach Bedarf",
+      "description": "Komplette Wohnungen, mehrere Räume oder eine laufende Begleitung von der Planung bis zur Montage. Wir stecken den Umfang gemeinsam ab und ich mache dir ein passendes Angebot.",
+      "cta": "Projekt besprechen"
+    },
+    "note": "Weitere Projekte und Umfänge jederzeit auf Anfrage."
+  },
   "footer": {
     "cta": "Erzähl mir von deinem Raum.",
     "studioLabel": "Studio",

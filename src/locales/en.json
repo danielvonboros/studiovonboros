@@ -21,6 +21,32 @@
     "title": "One studio, one point of contact, one standard.",
     "text": "Studio von Boros is my practice for interior architecture and bespoke furniture in Berlin. I plan, draw and oversee the build myself — from the first measurement to the mounted front. The focus is the untapped potential of urban apartments: considered built-ins, honest materials, and spaces that make everyday life easier."
   },
+    "pricing": {
+    "kicker": "Services",
+    "title": "Clear packages, honest prices.",
+    "intro": "A fixed price for the thoughtful renovation of a room — everything else we plan individually.",
+    "package": {
+      "name": "Room Concept",
+      "price": "from €2,400",
+      "period": "per room, fixed price",
+      "features": [
+        "Initial consultation & on-site measurement in Berlin",
+        "Room concept with floor plan & furnishings",
+        "Design of built-ins & bespoke furniture",
+        "Material and color concept",
+        "Detailed plans for implementation"
+      ],
+      "cta": "Request package"
+    },
+    "custom": {
+      "name": "Custom Projects",
+      "price": "On request",
+      "period": "Scope as needed",
+      "description": "Complete apartments, multiple rooms or ongoing support from planning to installation. We define the scope together and I will make you a suitable offer.",
+      "cta": "Discuss project"
+    },
+    "note": "Additional projects and scopes available upon request."
+  },
 "footer": {
     "cta": "Tell me about your space.",
     "studioLabel": "Studio",
