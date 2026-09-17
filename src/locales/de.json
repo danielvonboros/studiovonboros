@@ -48,6 +48,17 @@
     },
     "note": "Weitere Projekte und Umfänge jederzeit auf Anfrage."
   },
+   "contact": {
+    "kicker": "Kontakt",
+    "title": "Erzähl mir von deinem Raum.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "submit": "Senden",
+    "sending": "Wird gesendet …",
+    "success": "Danke! Deine Nachricht ist angekommen — ich melde mich bald.",
+    "error": "Das hat leider nicht geklappt. Bitte versuch es erneut oder schreib direkt an hallo@studiovonboros.com."
+  },
   "footer": {
     "cta": "Erzähl mir von deinem Raum.",
     "studioLabel": "Studio",

@@ -1,16 +1,12 @@
 <script setup lang="ts">
+import ContactForm from '@/components/ContactForm.vue';
+
 const year = new Date().getFullYear();
 </script>
 
 <template>
   <footer id="contact" class="bg-espresso px-6 py-24 text-kalk md:px-10 md:py-32">
-    <p class="max-w-3xl font-display text-[clamp(2.25rem,6vw,5rem)] leading-[1.02]">
-      {{$t('footer.cta')}}
-    </p>
-
-    <a href="mailto:hallo@studiovonboros.com" class="link-underline mt-10 text-messing">
-      hallo@studiovonboros.com
-    </a>
+    <ContactForm />
 
     <div class="mt-20 grid gap-10 border-t border-espresso-soft pt-10 md:grid-cols-3">
       <div>

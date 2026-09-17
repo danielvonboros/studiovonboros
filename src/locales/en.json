@@ -47,6 +47,17 @@
     },
     "note": "Additional projects and scopes available upon request."
   },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Tell me about your space.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send",
+    "sending": "Sending …",
+    "success": "Thank you! Your message has arrived — I'll be in touch soon.",
+    "error": "That didn't work. Please try again or email hallo@studiovonboros.com directly."
+  },
 "footer": {
     "cta": "Tell me about your space.",
     "studioLabel": "Studio",
