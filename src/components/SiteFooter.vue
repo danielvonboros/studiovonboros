@@ -25,9 +25,13 @@ const year = new Date().getFullYear();
       </div>
       <div class="md:text-right">
         <p class="kicker mb-3 !text-kalk/50">{{$t('footer.legalLabel')}}</p>
-        <a href="/impressum" class="block text-kalk/80 hover:text-messing">{{$t('footer.imprint')}}</a>
-        <a href="/datenschutz" class="block text-kalk/80 hover:text-messing">{{$t('footer.privacy')}}</a>
-        <p class="mt-4 text-xs text-kalk/40">© {{ year }} {{$t('footer.copyright')}}</p>
+ <router-link to="/impressum" class="block text-kalk/80 hover:text-messing">
+          {{ $t('legal.imprint') }}
+        </router-link>
+        <router-link to="/datenschutz" class="block text-kalk/80 hover:text-messing">
+          {{ $t('legal.privacy') }}
+        </router-link>
+        <p class="mt-4 text-xs text-kalk/40">{{ year }} {{$t('footer.copyright')}}</p>
       </div>
     </div>
   </footer>

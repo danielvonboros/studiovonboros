@@ -69,6 +69,10 @@
     "privacy": "Privacy",
     "copyright": "© {year} Studio von Boros"
   },
+    "legal": {
+    "imprint": "Imprint",
+    "privacy": "Privacy Policy"
+  },
     "seo": {
     "defaultTitle": "Studio von Boros — Interior Architecture & Furniture Design in Berlin",
     "titleTemplate": "%s — Studio von Boros",

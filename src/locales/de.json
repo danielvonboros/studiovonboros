@@ -70,6 +70,10 @@
     "privacy": "Datenschutz",
     "copyright": "© {year} Studio von Boros"
   },
+    "legal": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  },
     "seo": {
     "defaultTitle": "Studio von Boros — Innenarchitektur & Möbeldesign in Berlin",
     "titleTemplate": "%s — Studio von Boros",
