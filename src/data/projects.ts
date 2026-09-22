@@ -3,43 +3,43 @@ import type { Project } from '@/types';
 // Inhalte getrennt vom Layout — hier pflegst du Projekte, ohne Komponenten anzufassen.
 export const projects: Project[] = [
   {
-    id: 'stauraum-loft',
-    title: 'Stauraum-Loft',
+    id: 'homeoffice-nische',
+    title: 'Homeoffice',
     category: 'Innenausbau',
     year: '2025',
     description:
-      'Ein kompaktes Loft, das durch raumhohe Einbauten und eine zusätzliche Ebene fast doppelt so viel nutzbaren Raum gewonnen hat — ohne beengt zu wirken.',
-    image: '/projects/project-1.jpg',
+      'Homeoffice in einer Nische. Ein Raum, der alles kann: Arbeiten, Wohnen und Entspannen. Mit maßgefertigten Einbauten und cleverer Zonierung.',
+    image: '/projects/homeoffice_nische_wohnzimmer.webp',
     href: '#',
   },
   {
-    id: 'sideboard-quadra',
-    title: 'Sideboard Quadra',
+    id: 'sideboard-alto',
+    title: 'Sideboard Alto',
     category: 'Möbeldesign',
-    year: '2025',
+    year: '2020',
     description:
       'Ein minimalistisches Sideboard nach Maß. Ruhige Proportionen, ehrliche Materialien, gebaut, um Jahrzehnte zu halten.',
-    image: '/projects/project-2.jpg',
+    image: '/projects/sideboard_alto.webp',
     href: '#',
   },
   {
-    id: 'raumteiler-empore',
-    title: 'Raumteiler & Empore',
-    category: 'Raumkonzept',
-    year: '2024',
+    id: 'raumteiler',
+    title: 'Raumteiler',
+    category: 'Raumkonzept & Möbeldesign',
+    year: '2026',
     description:
-      'Wohnen und Schlafen in einem Raum — getrennt durch eine begehbare Empore statt einer Wand. Zonierung, die Licht und Weite erhält.',
-    image: '/projects/project-3.jpg',
+      'Wohnen und Schlafen in einem Raum — getrennt durch einen Kleiderschrank mit Spiegeltüren. Zonierung, die Licht und Weite erhält.',
+    image: '/projects/schlafzimmer_trennwand_wohnbereich.webp',
     href: '#',
   },
   {
     id: 'mikroapartment',
     title: 'Mikroapartment',
     category: 'Innenausbau',
-    year: '2024',
+    year: '2026',
     description:
-      'Auf wenigen Quadratmetern: Hochbett, Arbeitsplatz und Stauraum in einem durchdachten Einbau vereint.',
-    image: '/projects/project-4.jpg',
+      'Auf wenigen Quadratmetern: Hochbett, Arbeitsplatz und Stauraum in einem durchdachten Einbau vereint. Optisch getrennt aber funktional verbunden. Ein Raum, der alles kann.',
+    image: '/projects/gaestezimmer_kleiderschrank_durchgang.webp',
     href: '#',
   },
 ];
