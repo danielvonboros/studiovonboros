@@ -9,23 +9,23 @@ export const router = createRouter({
       component: HomeView,
       children: [
         { path: 'projekte/:id', name: 'project', component: ProjectModal, props: true },
-      ],},
-    { path: '/:pathMatch(.*)*', redirect: '/' },
         {
-      path: '/impressum',
+      path: 'impressum',
       name: 'imprint',
-      component: () => import('@/views/LegalView.vue'),
+      component: () => import('@/components/LegalModal.vue'),
       props: { doc: 'imprint' },
     },
     {
-      path: '/datenschutz',
+      path: 'datenschutz',
       name: 'privacy',
-      component: () => import('@/views/LegalView.vue'),
+      component: () => import('@/components/LegalModal.vue'),
       props: { doc: 'privacy' },
     },
+      ],},        
   ],
     scrollBehavior(to, from, savedPosition) {
-    if (to.name === 'project' || from.name === 'project') return false;
+      const modals = ['project', 'imprint', 'privacy'];
+    if (modals.includes(to.name as string) || modals.includes(from.name as string)) return false;
     if (savedPosition) return savedPosition;
     if (to.hash) return { el: to.hash, behavior: 'smooth' };
     return { top: 0 };
