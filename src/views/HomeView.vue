@@ -31,6 +31,7 @@ useSeo();
     <p class="mt-6 text-lg leading-relaxed text-espresso-soft">
       {{ $t('studio.text') }}
     </p>
+    <router-link to="/ueber-mich" class="link-underline mt-10">{{ $t('studio.more') }}</router-link>
   </section>
 
       <PricingSection />

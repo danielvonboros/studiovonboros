@@ -19,7 +19,53 @@
   "studio": {
     "kicker": "Studio",
     "title": "One studio, one point of contact, one standard.",
-    "text": "Studio von Boros is my practice for interior architecture and bespoke furniture in Berlin. I plan, draw and oversee the build myself — from the first measurement to the mounted front. The focus is the untapped potential of urban apartments: considered built-ins, honest materials, and spaces that make everyday life easier."
+    "text": "Studio von Boros is my practice for interior architecture and bespoke furniture in Berlin. I plan, draw and oversee the build myself — from the first measurement to the mounted front. The focus is the untapped potential of urban apartments: considered built-ins, honest materials, and spaces that make everyday life easier.",
+    "more": "More about me"
+  },
+  "about": {
+    "kicker": "About",
+    "title": "Daniel von Boros",
+    "lead": "Architect in Berlin. I design interiors, built-ins and bespoke furniture, and see them through to the mounted front.",
+    "sections": [
+      {
+        "title": "From the whole to the detail",
+        "text": "I studied architecture and bring more than 5 years of professional experience as an architect with me. One habit I developed: I think about a space as a whole before I draw the first piece of furniture. Proportion before decoration."
+      },
+      {
+        "title": "A detour through software",
+        "text": "After that I spent three years as a software developer. It taught me to structure processes clearly and to record decisions precisely. My plans benefit from it today: unambiguous, complete, buildable."
+      },
+      {
+        "title": "One studio, one point of contact",
+        "text": "Studio von Boros is deliberately small. I plan, draw and oversee the build myself, from the first measurement to the mounted front. For wood and metal work I collaborate with a partner workshop that builds from my detail drawings. One person stays responsible, from the first line to the last joint."
+      },
+      {
+        "title": "What I work on",
+        "text": "My focus is Berlin's period and loft apartments: high ceilings, alcoves, walk-through rooms, spaces that should do more than they do today. Typical tasks are a home office in an alcove, a room divider between living and sleeping, a loft bed with desk and storage, or a material and colour concept for the whole apartment."
+      },
+      {
+        "title": "What I care about",
+        "text": "An intervention should not look like a renovation, but as if it had always been that way. That is why I work with honest materials, calm proportions and the light that is already there."
+      }
+    ],
+    "factsTitle": "At a glance",
+    "facts": [
+      { "label": "Professional title", "value": "Architect (Germany)" },
+      { "label": "Chamber", "value": "Berlin Chamber of Architects, list no. 17290" },
+      { "label": "Location", "value": "Berlin-Schöneberg" },
+      { "label": "Services", "value": "Room concept from €2,400 per room (fixed price), custom projects on request" },
+      { "label": "Languages", "value": "German, English" }
+    ],
+    "cta": "Book an initial consultation",
+    "signature": "— Daniel von Boros",
+    "seoTitle": "Daniel von Boros, architect in Berlin",
+    "seoDescription": "Daniel von Boros is an architect in Berlin and founder of Studio von Boros. He designs interiors, built-ins and bespoke furniture for period and loft apartments, from measurement to installation."
+  },
+  "notFound": {
+    "kicker": "404",
+    "title": "This page does not exist.",
+    "text": "It may have been moved or renamed.",
+    "cta": "Back to the homepage"
   },
     "pricing": {
     "kicker": "Services",
@@ -63,6 +109,7 @@
     "studioLabel": "Studio",
     "studioLocation": "Berlin, Germany",
     "studioHours": "By appointment",
+    "about": "About",
     "socialLabel": "Social",
     "legalLabel": "Legal",
     "imprint": "Imprint",

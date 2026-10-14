@@ -24,8 +24,23 @@ mit denselben Namen:
 ## Inhalte pflegen
 
 - Projekte: `src/data/projects.ts`
-- Studio-Text: `src/App.vue`
-- Hero-Text: Defaults in `src/components/HeroSection.vue`
+- Texte (Hero, Studio, Leistungen, Über mich): `src/locales/de.json` und `en.json`
+- Impressum & Datenschutz: `src/legal/*.html`
+- Structured Data (Schema.org für Google & KI): `src/components/StructuredData.vue`
+- Für KI-Assistenten: `public/llms.txt`, Crawler-Regeln: `public/robots.txt`
+
+## Prerendering (SEO & KI-Sichtbarkeit)
+
+`npm run build` erzeugt für jede Seite fertiges HTML (`scripts/prerender.js`),
+damit Suchmaschinen und KI-Crawler den Inhalt ohne JavaScript lesen können.
+Im Browser übernimmt Vue dieses HTML (Hydration) und läuft danach wie gewohnt.
+
+- Welche Seiten vorgerendert werden: `routes` in `src/entry-server.ts`
+  (Projekte kommen automatisch aus `projects.ts`).
+- Neue Seite? Route in `src/router/index.ts` **und** in `routes` eintragen.
+- `sitemap.xml` und `404.html` entstehen dabei automatisch.
+- Code, der `window`, `document` oder `localStorage` braucht, gehört in
+  `onMounted()` — beim Prerendering gibt es keinen Browser.
 
 ## Farben
 

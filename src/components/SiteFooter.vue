@@ -13,6 +13,9 @@ const year = new Date().getFullYear();
         <p class="kicker mb-3 !text-kalk/50">{{$t('footer.studioLabel')}}</p>
         <p class="text-kalk/80">{{$t('footer.studioLocation')}}</p>
         <p class="text-kalk/80">{{$t('footer.studioHours')}}</p>
+        <router-link to="/ueber-mich" class="mt-3 block text-kalk/80 hover:text-messing">
+          {{ $t('footer.about') }}
+        </router-link>
       </div>
       <div>
         <p class="kicker mb-3 !text-kalk/50">{{$t('footer.socialLabel')}}</p>

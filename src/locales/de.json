@@ -20,7 +20,53 @@
   "studio": {
     "kicker": "Studio",
     "title": "Ein Büro, ein Ansprechpartner, ein Maßstab.",
-    "text": "Studio von Boros ist mein Büro für Innenarchitektur und Möbel nach Maß in Berlin. Ich plane, zeichne und begleite die Ausführung selbst — vom ersten Aufmaß bis zur montierten Front. Der Fokus liegt auf dem ungenutzten Potenzial städtischer Wohnungen: durchdachte Einbauten, ehrliche Materialien und Räume, die den Alltag leichter machen."
+    "text": "Studio von Boros ist mein Büro für Innenarchitektur und Möbel nach Maß in Berlin. Ich plane, zeichne und begleite die Ausführung selbst — vom ersten Aufmaß bis zur montierten Front. Der Fokus liegt auf dem ungenutzten Potenzial städtischer Wohnungen: durchdachte Einbauten, ehrliche Materialien und Räume, die den Alltag leichter machen.",
+    "more": "Mehr über mich"
+  },
+  "about": {
+    "kicker": "Über mich",
+    "title": "Daniel von Boros",
+    "lead": "Architekt in Berlin. Ich entwerfe Innenräume, Einbauten und Möbel nach Maß und begleite sie bis zur montierten Front.",
+    "sections": [
+      {
+        "title": "Vom Ganzen zum Detail",
+        "text": "Ich habe Architektur studiert und bringe mehr als 5 Jahre Berufserfahrung als Architekt mit. Daraus ist eine Gewohnheit geworden: Ich denke einen Raum vom Ganzen her, bevor ich das erste Möbel zeichne. Proportion vor Dekoration."
+      },
+      {
+        "title": "Ein Umweg über Software",
+        "text": "Danach habe ich drei Jahre als Softwareentwickler gearbeitet. Dort habe ich gelernt, Abläufe klar zu ordnen und Entscheidungen genau festzuhalten. Davon profitieren heute meine Pläne: eindeutig, vollständig, baubar."
+      },
+      {
+        "title": "Ein Büro, ein Ansprechpartner",
+        "text": "Studio von Boros ist bewusst klein. Ich plane, zeichne und begleite die Ausführung selbst, vom ersten Aufmaß bis zur montierten Front. Für Holz- und Metallarbeiten arbeite ich mit einer Partnerwerkstatt, die nach meinen Detailplänen fertigt. So bleibt eine Person verantwortlich, vom ersten Strich bis zur letzten Fuge."
+      },
+      {
+        "title": "Woran ich arbeite",
+        "text": "Mein Schwerpunkt sind Berliner Altbau- und Loftwohnungen: hohe Decken, Nischen, Durchgangszimmer, Räume, die mehr können sollen als bisher. Typische Aufgaben sind ein Homeoffice in einer Nische, ein Raumteiler zwischen Wohnen und Schlafen, ein Hochbett mit Arbeitsplatz und Stauraum oder ein Material- und Farbkonzept für die ganze Wohnung."
+      },
+      {
+        "title": "Worauf ich achte",
+        "text": "Ein Eingriff soll nicht wie ein Umbau wirken, sondern so, als wäre es nie anders gewesen. Dafür arbeite ich mit ehrlichen Materialien, ruhigen Proportionen und dem Licht, das schon da ist."
+      }
+    ],
+    "factsTitle": "Auf einen Blick",
+    "facts": [
+      { "label": "Berufsbezeichnung", "value": "Architekt" },
+      { "label": "Kammer", "value": "Architektenkammer Berlin, Architektenliste Nr. 17290" },
+      { "label": "Standort", "value": "Berlin-Schöneberg" },
+      { "label": "Leistungen", "value": "Raumkonzept ab 2.400 € pro Raum (Festpreis), individuelle Projekte auf Anfrage" },
+      { "label": "Sprachen", "value": "Deutsch, Englisch" }
+    ],
+    "cta": "Erstgespräch vereinbaren",
+    "signature": "— Daniel von Boros",
+    "seoTitle": "Daniel von Boros, Architekt in Berlin",
+    "seoDescription": "Daniel von Boros ist Architekt in Berlin und Gründer von Studio von Boros. Er plant Innenräume, Einbauten und Möbel nach Maß für Altbau- und Loftwohnungen, vom Aufmaß bis zur Montage."
+  },
+  "notFound": {
+    "kicker": "404",
+    "title": "Diese Seite gibt es nicht.",
+    "text": "Vielleicht wurde sie verschoben oder umbenannt.",
+    "cta": "Zur Startseite"
   },
    "pricing": {
     "kicker": "Leistungen",
@@ -64,6 +110,7 @@
     "studioLabel": "Studio",
     "studioLocation": "Berlin, Deutschland",
     "studioHours": "Termine nach Vereinbarung",
+    "about": "Über mich",
     "socialLabel": "Social",
     "legalLabel": "Rechtliches",
     "imprint": "Impressum",

@@ -1,0 +1,6 @@
+# Alle Crawler sind willkommen, ausdrücklich auch KI-Crawler
+# (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended).
+User-agent: *
+Allow: /
+
+Sitemap: https://studiovonboros.com/sitemap.xml

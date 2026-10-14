@@ -6,7 +6,12 @@
   directory = "src/netlify/functions"
   node_bundler = "esbuild"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Kein SPA-Fallback mehr ("/*" -> index.html): Jede Seite liegt vorgerendert in dist/.
+# Unbekannte Adressen bekommen dist/404.html mit echtem Status 404 statt 200.
+
+# Gehashte Build-Dateien (JS, CSS, Schriften) ändern bei jeder Änderung ihren Namen
+# und dürfen deshalb dauerhaft im Browser-Cache bleiben.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
