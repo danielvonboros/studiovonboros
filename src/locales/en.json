@@ -93,6 +93,40 @@
     },
     "note": "Additional projects and scopes available upon request."
   },
+  "faq": {
+    "kicker": "Questions",
+    "title": "Frequently asked questions.",
+    "items": [
+      {
+        "q": "Who does Studio von Boros work for?",
+        "a": "Mainly for owners of period and loft apartments in Berlin who want to develop their spaces with a design-led approach. It is less about quickly solving a lack of space and more about an intervention that looks as if it had always been there."
+      },
+      {
+        "q": "Does Studio von Boros design built-in wardrobes and bespoke furniture?",
+        "a": "Yes, built-ins and bespoke furniture are the core of my work: built-in wardrobes, wall units, room dividers, alcove solutions and individual pieces such as sideboards. I design them to suit the room and its existing fabric, draw the detail plans and oversee production through to installation."
+      },
+      {
+        "q": "Are interior architecture and furniture design available from a single source?",
+        "a": "Yes. Room concept, floor plan, built-ins, furniture, material and colour concept and detail plans all come from one studio. There is one point of contact from the first measurement to the mounted front. Production takes place to my plans in a partner workshop for wood and metal."
+      },
+      {
+        "q": "Which materials does Studio von Boros work with?",
+        "a": "With materials that show what they are and may gain a patina over time: wood such as oak, matt lacquered surfaces, glass, mirror and metals such as brass. In period apartments, floorboards, stucco and high ceilings are part of the material. I plan with them, not against them."
+      },
+      {
+        "q": "How much does the planning cost?",
+        "a": "The room concept costs from €2,400 per room at a fixed price. It includes the initial consultation and on-site measurement in Berlin, a room concept with floor plan and furnishings, the design of built-ins and bespoke furniture, a material and colour concept and detail plans for implementation. Complete apartments and multiple rooms are planned on an individual quote. Production is not included; its cost depends on size, material and finish."
+      },
+      {
+        "q": "How does a project work?",
+        "a": "It starts with an initial consultation and on-site measurement. This leads to the room concept with floor plan and furnishings, followed by the design of the built-ins with a material and colour concept. The detail plans go into production; on request I oversee the work through to installation."
+      },
+      {
+        "q": "Who is behind Studio von Boros?",
+        "a": "Daniel von Boros, architect in Berlin, registered with the Berlin Chamber of Architects. The studio is based in Berlin-Schöneberg; appointments take place across Berlin by arrangement."
+      }
+    ]
+  },
   "contact": {
     "kicker": "Contact",
     "title": "Tell me about your space.",
@@ -123,7 +157,7 @@
     "seo": {
     "defaultTitle": "Studio von Boros — Interior Architecture & Furniture Design in Berlin",
     "titleTemplate": "%s — Studio von Boros",
-    "description": "Studio von Boros designs bespoke interiors and furniture for small urban apartments in Berlin — considered built-ins, honest materials.",
+    "description": "Studio von Boros designs interiors, built-ins and bespoke furniture for period and loft apartments in Berlin — with a design-led approach and honest materials.",
     "home": "Interior Architecture & Bespoke Furniture in Berlin",
     "project": "Project"
   }

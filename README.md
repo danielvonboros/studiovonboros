@@ -42,6 +42,18 @@ Im Browser übernimmt Vue dieses HTML (Hydration) und läuft danach wie gewohnt.
 - Code, der `window`, `document` oder `localStorage` braucht, gehört in
   `onMounted()` — beim Prerendering gibt es keinen Browser.
 
+## IndexNow (Bing & Co. sofort informieren)
+
+Nach einem Deploy mit neuen oder geänderten Seiten:
+
+```bash
+npm run indexnow
+```
+
+Das meldet alle URLs aus der Live-Sitemap an IndexNow. Bing speist u. a. die
+ChatGPT-Suche. Der Schlüssel ist die Datei `public/<32 Hex-Zeichen>.txt` — nicht
+löschen oder umbenennen.
+
 ## Farben
 
 Alle Markenfarben stehen in `src/style.css` im `@theme`-Block.

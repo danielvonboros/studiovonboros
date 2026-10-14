@@ -94,6 +94,40 @@
     },
     "note": "Weitere Projekte und Umfänge jederzeit auf Anfrage."
   },
+  "faq": {
+    "kicker": "Fragen",
+    "title": "Häufige Fragen.",
+    "items": [
+      {
+        "q": "Für wen arbeitet Studio von Boros?",
+        "a": "Vor allem für Eigentümerinnen und Eigentümer von Altbau- und Loftwohnungen in Berlin, die ihre Räume mit Gestaltungsanspruch weiterentwickeln wollen. Es geht weniger um die schnelle Lösung eines Platzproblems als um einen Eingriff, der so wirkt, als wäre er immer schon da gewesen."
+      },
+      {
+        "q": "Plant Studio von Boros Einbauschränke und Möbel nach Maß?",
+        "a": "Ja, Einbauten und Möbel nach Maß sind der Kern meiner Arbeit: Einbauschränke, Schrankwände, Raumteiler, Einbauten für Nischen und einzelne Möbelstücke wie Sideboards. Ich entwerfe sie passend zu Raum und Bestand, zeichne die Detailpläne und begleite die Fertigung bis zur Montage."
+      },
+      {
+        "q": "Gibt es Innenarchitektur und Möbeldesign aus einer Hand?",
+        "a": "Ja. Raumkonzept, Grundriss, Einbauten, Möbel, Material- und Farbkonzept und Detailpläne kommen aus einem Büro. Es gibt einen Ansprechpartner vom ersten Aufmaß bis zur montierten Front. Gefertigt wird nach meinen Plänen in einer Partnerwerkstatt für Holz und Metall."
+      },
+      {
+        "q": "Mit welchen Materialien arbeitet Studio von Boros?",
+        "a": "Mit Materialien, die zeigen, was sie sind, und mit der Zeit Patina bekommen dürfen: Holz wie Eiche, matte Lackoberflächen, Glas, Spiegel und Metall wie Messing. Im Altbau gehören Dielen, Stuck und hohe Decken zum Material dazu. Ich plane mit ihnen, nicht gegen sie."
+      },
+      {
+        "q": "Was kostet die Planung?",
+        "a": "Das Raumkonzept kostet ab 2.400 € pro Raum zum Festpreis. Enthalten sind Erstgespräch und Aufmaß vor Ort in Berlin, Raumkonzept mit Grundriss und Möblierung, Entwurf der Einbauten und Möbel nach Maß, Material- und Farbkonzept sowie Detailpläne für die Umsetzung. Komplette Wohnungen und mehrere Räume plane ich nach individuellem Angebot. Die Fertigung ist nicht enthalten; ihre Kosten hängen von Größe, Material und Ausführung ab."
+      },
+      {
+        "q": "Wie läuft ein Projekt ab?",
+        "a": "Am Anfang stehen ein Erstgespräch und das Aufmaß vor Ort. Daraus entsteht das Raumkonzept mit Grundriss und Möblierung, danach der Entwurf der Einbauten mit Material- und Farbkonzept. Mit den Detailplänen geht es in die Fertigung; auf Wunsch begleite ich die Ausführung bis zur Montage."
+      },
+      {
+        "q": "Wer steht hinter Studio von Boros?",
+        "a": "Daniel von Boros, Architekt in Berlin, eingetragen in der Architektenliste der Architektenkammer Berlin. Das Büro sitzt in Berlin-Schöneberg; Termine finden nach Vereinbarung in ganz Berlin statt."
+      }
+    ]
+  },
    "contact": {
     "kicker": "Kontakt",
     "title": "Erzähl mir von deinem Raum.",
@@ -124,7 +158,7 @@
     "seo": {
     "defaultTitle": "Studio von Boros — Innenarchitektur & Möbeldesign in Berlin",
     "titleTemplate": "%s — Studio von Boros",
-    "description": "Studio von Boros gestaltet Innenräume und Möbel nach Maß für kleine Stadtwohnungen in Berlin — durchdachte Einbauten, ehrliche Materialien.",
+    "description": "Studio von Boros plant Innenräume, Einbauten und Möbel nach Maß für Altbau- und Loftwohnungen in Berlin — mit Gestaltungsanspruch und ehrlichen Materialien.",
     "home": "Innenarchitektur & Möbel nach Maß in Berlin",
     "project": "Projekt"
   }
