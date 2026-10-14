@@ -75,6 +75,18 @@
   .link-underline:hover::after {
     transform: scaleX(0.35);
   }
+
+  /* Weisse Kontur fuer Schrift auf unruhigem Bildgrund (Header ueber dem Hero) */
+  .text-outline-white {
+    text-shadow:
+      -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff,
+      -1px 0 0 #fff, 1px 0 0 #fff,
+      -1px 1px 0 #fff, 0 1px 0 #fff, 1px 1px 0 #fff;
+  }
+  /* Browser setzen bei Buttons text-shadow: none (Menü, Sprachumschalter) */
+  .text-outline-white button {
+    text-shadow: inherit;
+  }
 }
 
 /* Grundzustand fuer die Scroll-Reveal-Animation (siehe useScrollReveal) */

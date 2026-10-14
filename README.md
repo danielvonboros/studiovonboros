@@ -17,7 +17,7 @@ npm run typecheck  # nur Typen prüfen, ohne Build
 In `public/` liegen Platzhalter. Ersetze sie durch echte Dateien
 mit denselben Namen:
 
-- `public/hero.jpg` — quer, mindestens 2400px breit
+- `public/hero.webp` — quer, mindestens 2400px breit
 - `public/projects/project-1.jpg` … `project-4.jpg` — Seitenverhältnis 4:3
 - `public/og.jpg` — 1200 × 630px, für Social-Vorschauen
 

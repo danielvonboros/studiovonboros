@@ -10,6 +10,8 @@ export function createAppRouter(history: RouterHistory) {
       {
         path: '/',
         component: HomeView,
+        // Seite beginnt mit dem Hero-Bild — der Header startet dort mit weißer Outline (SiteHeader).
+        meta: { hero: true },
         children: [
           { path: 'projekte/:id', name: 'project', component: ProjectModal, props: true },
           {

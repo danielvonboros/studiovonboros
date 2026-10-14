@@ -8,7 +8,7 @@ withDefaults(
     intro?: string;
   }>(),
   {
-    image: '/hero.jpg',
+    image: '/hero.webp',
     kicker: 'Innenarchitektur · Möbel nach Maß · Berlin',
     title: 'Räume mit Haltung.',
     intro:
@@ -18,7 +18,7 @@ withDefaults(
 </script>
 
 <template>
-  <section class="relative flex h-svh min-h-[560px] items-end overflow-hidden bg-espresso">
+  <section data-hero class="relative flex h-svh min-h-[560px] items-end overflow-hidden bg-espresso">
     <img
       :src="image"
       alt=""

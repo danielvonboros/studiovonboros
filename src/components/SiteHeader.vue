@@ -1,8 +1,34 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 import LocaleSwitch from '@/components/LocaleSwitch.vue';
 
 const open = ref(false);
+const route = useRoute();
+const header = ref<HTMLElement>();
+
+const overHero = ref(Boolean(route.meta.hero));
+
+function updateOverHero() {
+  const hero = document.querySelector('[data-hero]');
+  overHero.value = !!hero && !!header.value && hero.getBoundingClientRect().bottom > header.value.offsetHeight;
+}
+
+onMounted(() => {
+  updateOverHero();
+  window.addEventListener('scroll', updateOverHero, { passive: true });
+  window.addEventListener('resize', updateOverHero);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', updateOverHero);
+  window.removeEventListener('resize', updateOverHero);
+});
+
+watch(
+  () => route.path,
+  () => nextTick(updateOverHero),
+);
 
 const links = [
   { label: `nav.projects`, hash: '#projects' },
@@ -13,7 +39,9 @@ const links = [
 
 <template>
   <header
-    class="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-5 text-white mix-blend-difference"
+    ref="header"
+    class="fixed inset-x-0 top-0 z-50 flex items-center justify-between px-6 py-5"
+    :class="overHero && !open ? 'text-kalk' : 'text-white mix-blend-difference'"
   >
     <router-link to="/" class="text-lg font-extrabold uppercase tracking-tight">
       Studio von Boros
