@@ -51,6 +51,7 @@
     "factsTitle": "At a glance",
     "facts": [
       { "label": "Professional title", "value": "Architect (Germany)" },
+      { "label": "Degree", "value": "M.Sc. Architecture" },
       { "label": "Chamber", "value": "Berlin Chamber of Architects, list no. 17290" },
       { "label": "Location", "value": "Berlin-Schöneberg" },
       { "label": "Services", "value": "Room concept from €2,400 per room (fixed price), custom projects on request" },

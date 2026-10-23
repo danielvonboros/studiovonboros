@@ -52,6 +52,7 @@
     "factsTitle": "Auf einen Blick",
     "facts": [
       { "label": "Berufsbezeichnung", "value": "Architekt" },
+      { "label": "Abschluss", "value": "M.Sc. Architektur" },
       { "label": "Kammer", "value": "Architektenkammer Berlin, Architektenliste Nr. 17290" },
       { "label": "Standort", "value": "Berlin-Schöneberg" },
       { "label": "Leistungen", "value": "Raumkonzept ab 2.400 € pro Raum (Festpreis), individuelle Projekte auf Anfrage" },

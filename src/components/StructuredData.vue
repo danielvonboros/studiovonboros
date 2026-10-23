@@ -17,7 +17,8 @@ const schema = {
     // 1. STUDIO
     // ─────────────────────────────────────────────────────────────
     {
-      '@type': 'ProfessionalService',
+      // "Organization" explizit dazu: Einfache Parser suchen genau diesen Typ, um das Unternehmen zu finden.
+      '@type': ['ProfessionalService', 'Organization'],
       '@id': studioId,
 
       name: 'Studio von Boros',
@@ -111,6 +112,13 @@ const schema = {
 
       name: 'Daniel von Boros',
       jobTitle: 'Architekt',
+      honorificSuffix: 'M.Sc.',
+      hasCredential: {
+        '@type': 'EducationalOccupationalCredential',
+        name: 'M.Sc. Architektur',
+        credentialCategory: 'degree',
+        educationalLevel: 'Master of Science',
+      },
 
       description:
         'Architekt in Berlin, eingetragen in der Architektenliste der Architektenkammer Berlin. Gründer von Studio von Boros für Innenarchitektur, Einbauten und Möbel nach Maß.',
@@ -118,11 +126,8 @@ const schema = {
       url: `${SITE_URL}/ueber-mich`,
       worksFor: { '@id': studioId },
 
-      memberOf: {
-        '@type': 'Organization',
-        name: 'Architektenkammer Berlin',
-        url: 'https://www.ak-berlin.de',
-      },
+      // Kammer nur im Text (description), nicht als eigene Organization: Ein SEO-Tool hat sonst
+      // "Architektenkammer Berlin" für das Unternehmen hinter der Website gehalten.
 
       knowsAbout: ['Architektur', 'Innenarchitektur', 'Möbeldesign', 'Möbelbau', 'Raumplanung'],
 
